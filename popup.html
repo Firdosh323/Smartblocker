@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Ad Blocker</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <!-- Logo Icon -->
+            <i class="fas fa-shield-alt logo"></i>
+            <div class="icons">
+                <!-- Dark Mode Icon -->
+                <i class="fas fa-moon" id="dark-mode-toggle"></i>
+                <!-- Settings Icon -->
+                <i class="fas fa-cog"></i>
+            </div>
+        </div>
+        <div class="content">
+            <div class="site-info">
+                <!-- Default Favicon Icon -->
+                <i class="fas fa-globe" id="favicon"></i>
+                <span id="website-name">nytimes.com</span>
+            </div>
+            <div class="ad-info">
+                <div>BLOCKED: <span id="blocked-count">7</span></div>
+                <div>Total: <span id="total-blocked">107</span></div>
+            </div>
+            <div class="toggle">
+                <input type="checkbox" id="toggle-button" checked>
+                <label for="toggle-button" id="toggle-label">ON</label>
+            </div>
+            <div id="protection-message" class="protection-on">You are protected against the tracker & ads</div>
+            <div class="pause-options">
+                <button id="pause-once">Once</button>
+                <button id="pause-always">Always</button>
+            </div>
+            <a href="#" id="more-options">More pause options</a>
+            <a href="#" id="hide-options">Hide something on this page</a>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

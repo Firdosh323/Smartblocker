@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+}
+
+.container {
+    padding: 15px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: #FF6347; /* Customize this to match your branding */
+}
+
+.icons i {
+    font-size: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.site-info {
+    display: flex;
+    align-items: center;
+}
+
+#favicon {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+#ad-info {
+    margin: 10px 0;
+}
+
+.toggle {
+    margin: 10px 0;
+}
+
+#toggle-button {
+    display: none;
+}
+
+#toggle-label {
+    font-weight: bold;
+    font-size: 18px;
+    color: green;
+    cursor: pointer;
+}
+
+#toggle-button:checked + #toggle-label {
+    color: red;
+}
+
+#protection-message {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.protection-on {
+    color: green;
+}
+
+.protection-off {
+    color: red;
+}
+
+.pause-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #FF6347;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FF4500;
+}
+
+a {
+    display: block;
+    color: #FF6347;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
