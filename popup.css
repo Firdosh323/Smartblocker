@@ -1,51 +1,72 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif; /* Change the default font */
     margin: 0;
     padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+#adblocker-container {
     width: 300px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 8px;
 }
 
-.container {
-    padding: 15px;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
+/* Logo */
 .logo {
-    font-size: 24px;
-    color: #FF6347; /* Customize this to match your branding */
+    width: 32px;
+    height: 32px;
+    margin-bottom: 15px;
 }
 
-.icons i {
-    font-size: 20px;
-    margin-left: 15px;
-    cursor: pointer;
-}
-
-.content {
-    margin-top: 20px;
-}
-
-.site-info {
+/* Website Info */
+#website-info {
     display: flex;
     align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Verdana', sans-serif; /* New font for website name */
 }
 
 #favicon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+#website-name {
     font-size: 16px;
-    margin-right: 5px;
 }
 
-#ad-info {
-    margin: 10px 0;
+/* Ad Block Info */
+#ad-block-info {
+    font-family: 'Courier New', Courier, monospace; /* New font for BLOCKED and Total */
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.toggle {
-    margin: 10px 0;
+#blocked-ads {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-bottom: 5px;
+    display: block;
+}
+
+#total-ads {
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+/* Toggle Section */
+#toggle-section {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 #toggle-button {
@@ -53,53 +74,74 @@ body {
 }
 
 #toggle-label {
-    font-weight: bold;
-    font-size: 18px;
-    color: green;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 15px;
+    position: relative;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#toggle-label:before {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s ease;
 }
 
 #toggle-button:checked + #toggle-label {
-    color: red;
+    background-color: #2ecc71;
 }
 
-#protection-message {
-    font-size: 14px;
-    margin: 10px 0;
-}
-
-.protection-on {
-    color: green;
+#toggle-button:checked + #toggle-label:before {
+    transform: translateX(30px);
 }
 
 .protection-off {
     color: red;
 }
 
-.pause-options {
-    display: flex;
-    justify-content: space-between;
+.protection-on {
+    color: green;
 }
 
-button {
-    padding: 5px 10px;
-    background-color: #FF6347;
-    border: none;
+/* Pause Section */
+#pause-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+#pause-section button {
+    width: 48%;
+    padding: 10px;
+    background-color: #e74c3c;
     color: white;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #FF4500;
+#pause-section button:hover {
+    background-color: #c0392b;
 }
 
-a {
+/* More Options Link */
+#more-options {
     display: block;
-    color: #FF6347;
-    margin-top: 10px;
+    text-align: center;
+    color: #3498db;
     text-decoration: none;
+    margin-top: 15px;
 }
 
-a:hover {
+#more-options:hover {
     text-decoration: underline;
 }
