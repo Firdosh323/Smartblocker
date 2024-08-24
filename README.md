@@ -67,3 +67,23 @@ We welcome contributions from the community to enhance the SmartAd Blocker exten
 2. **Clone Your Fork**: Clone your forked repository to your local machine:
    ```bash
    git clone https://github.com/Firdosh323/Smartblockerr.git
+
+
+3. **Create a Branch**: Create a new branch for your changes:
+```bash
+git checkout -b feature-branch-name
+
+4. **Make Your Changes**: Implement your changes or new features. Be sure to test thoroughly to ensure stability.
+
+5. **Commit Your Changes**: Add and commit your changes with a descriptive message:
+
+
+git add .
+git commit -m "Description of the feature or fix"
+
+
+6. **Push Your Branch**: Push your changes to your forked repository:
+
+
+git push origin feature-branch
+
