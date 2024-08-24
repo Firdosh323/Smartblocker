@@ -1,18 +1,9 @@
-importScripts('adsList.js');
+chrome.runtime.onInstalled.addListener(() => {
+    console.log("Ad Blocker Extension installed");
+});
 
-chrome.declarativeNetRequest.updateDynamicRules({
-    removeRuleIds: [1], // This is to clear existing rules with the same ID
-    addRules: [
-        {
-            "id": 1,
-            "priority": 1,
-            "action": {
-                "type": "block"
-            },
-            "condition": {
-                "urlFilter": adDomains.join('|'),
-                "resourceTypes": ["script", "image", "xmlhttprequest", "sub_frame"]
-            }
-        }
-    ]
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+    if (request.action === 'updateBlockedAds') {
+        // Handle updating the total ads blocked if needed
+    }
 });
